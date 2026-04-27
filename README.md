@@ -53,6 +53,3 @@ Each package folder inside `updated-file/` contains its own `README.md` with:
 
 ---
 
-## 📜 License
-
-Specify your license here (e.g., MIT, Apache 2.0, etc.)
