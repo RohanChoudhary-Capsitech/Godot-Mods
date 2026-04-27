@@ -1,0 +1,161 @@
+{
+  "en": {
+	"PLAY": "Play",
+	"SETTINGS": "Settings",
+	"EXIT": "Exit",
+	"ENGLISH": "English",
+	"HINDI": "Hindi",
+	"PORTUGUESE": "Portuguese",
+	"ARABIC": "Arabic",
+	"FRENCH": "French",
+	"SPANISH": "Spanish",
+	"GERMAN": "German",
+	"JAPANESE": "Japanese",
+	"RUSSIAN": "Russian",
+	"CHINESE": "Chinese"
+  },
+
+  "hi": {
+	"PLAY": "खेलो",
+	"SETTINGS": "सेटिंग्स",
+	"EXIT": "बाहर निकलें",
+	"ENGLISH": "अंग्रेज़ी",
+	"HINDI": "हिंदी",
+	"PORTUGUESE": "पुर्तगाली",
+	"ARABIC": "अरबी",
+	"FRENCH": "फ़्रेंच",
+	"SPANISH": "स्पेनिश",
+	"GERMAN": "जर्मन",
+	"JAPANESE": "जापानी",
+	"RUSSIAN": "रूसी",
+	"CHINESE": "चीनी"
+  },
+
+  "pt": {
+	"PLAY": "Jogar",
+	"SETTINGS": "Configurações",
+	"EXIT": "Sair",
+	"ENGLISH": "Inglês",
+	"HINDI": "Hindi",
+	"PORTUGUESE": "Português",
+	"ARABIC": "Árabe",
+	"FRENCH": "Francês",
+	"SPANISH": "Espanhol",
+	"GERMAN": "Alemão",
+	"JAPANESE": "Japonês",
+	"RUSSIAN": "Russo",
+	"CHINESE": "Chinês"
+  },
+
+  "ar": {
+	"PLAY": "العب",
+	"SETTINGS": "الإعدادات",
+	"EXIT": "خروج",
+	"ENGLISH": "الإنجليزية",
+	"HINDI": "الهندية",
+	"PORTUGUESE": "البرتغالية",
+	"ARABIC": "العربية",
+	"FRENCH": "الفرنسية",
+	"SPANISH": "الإسبانية",
+	"GERMAN": "الألمانية",
+	"JAPANESE": "اليابانية",
+	"RUSSIAN": "الروسية",
+	"CHINESE": "الصينية"
+  },
+
+  "fr": {
+	"PLAY": "Jouer",
+	"SETTINGS": "Paramètres",
+	"EXIT": "Quitter",
+	"ENGLISH": "Anglais",
+	"HINDI": "Hindi",
+	"PORTUGUESE": "Portugais",
+	"ARABIC": "Arabe",
+	"FRENCH": "Français",
+	"SPANISH": "Espagnol",
+	"GERMAN": "Allemand",
+	"JAPANESE": "Japonais",
+	"RUSSIAN": "Russe",
+	"CHINESE": "Chinois"
+  },
+
+  "es": {
+	"PLAY": "Jugar",
+	"SETTINGS": "Ajustes",
+	"EXIT": "Salir",
+	"ENGLISH": "Inglés",
+	"HINDI": "Hindi",
+	"PORTUGUESE": "Portugués",
+	"ARABIC": "Árabe",
+	"FRENCH": "Francés",
+	"SPANISH": "Español",
+	"GERMAN": "Alemán",
+	"JAPANESE": "Japonés",
+	"RUSSIAN": "Ruso",
+	"CHINESE": "Chino"
+  },
+
+  "de": {
+	"PLAY": "Spielen",
+	"SETTINGS": "Einstellungen",
+	"EXIT": "Beenden",
+	"ENGLISH": "Englisch",
+	"HINDI": "Hindi",
+	"PORTUGUESE": "Portugiesisch",
+	"ARABIC": "Arabisch",
+	"FRENCH": "Französisch",
+	"SPANISH": "Spanisch",
+	"GERMAN": "Deutsch",
+	"JAPANESE": "Japanisch",
+	"RUSSIAN": "Russisch",
+	"CHINESE": "Chinesisch"
+  },
+
+  "ja": {
+	"PLAY": "プレイ",
+	"SETTINGS": "設定",
+	"EXIT": "終了",
+	"ENGLISH": "英語",
+	"HINDI": "ヒンディー語",
+	"PORTUGUESE": "ポルトガル語",
+	"ARABIC": "アラビア語",
+	"FRENCH": "フランス語",
+	"SPANISH": "スペイン語",
+	"GERMAN": "ドイツ語",
+	"JAPANESE": "日本語",
+	"RUSSIAN": "ロシア語",
+	"CHINESE": "中国語"
+  },
+
+  "ru": {
+	"PLAY": "Играть",
+	"SETTINGS": "Настройки",
+	"EXIT": "Выход",
+	"ENGLISH": "Английский",
+	"HINDI": "Хинди",
+	"PORTUGUESE": "Португальский",
+	"ARABIC": "Арабский",
+	"FRENCH": "Французский",
+	"SPANISH": "Испанский",
+	"GERMAN": "Немецкий",
+	"JAPANESE": "Японский",
+	"RUSSIAN": "Русский",
+	"CHINESE": "Китайский"
+  },
+
+  "zh": {
+	"PLAY": "开始",
+	"SETTINGS": "设置",
+	"EXIT": "退出",
+	"ENGLISH": "英语",
+	"HINDI": "印地语",
+	"PORTUGUESE": "葡萄牙语",
+	"ARABIC": "阿拉伯语",
+	"FRENCH": "法语",
+	"SPANISH": "西班牙语",
+	"GERMAN": "德语",
+	"JAPANESE": "日语",
+	"RUSSIAN": "俄语",
+	"CHINESE": "中文"
+  }
+}
