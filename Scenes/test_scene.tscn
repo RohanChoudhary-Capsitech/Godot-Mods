@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://d18wg5gwstcrk"]
+
+[ext_resource type="Script" uid="uid://nbmfkuvbfodo" path="res://addons/AdmobPlugin/Admob.gd" id="1_3dogw"]
+[ext_resource type="Script" uid="uid://ct4066hhgkt66" path="res://Scenes/test_scene.gd" id="1_r5l72"]
+
+[node name="TestScene" type="Node2D" unique_id=593940029]
+script = ExtResource("1_r5l72")
+
+[node name="Admob" type="Node" parent="." unique_id=1922888293]
+script = ExtResource("1_3dogw")
+banner_position = 1
+android_debug_application_id = "ca-app-pub-3940256099942544~3347511713"
+ios_debug_application_id = "ca-app-pub-3940256099942544~1458002511"
+metadata/_custom_type_script = "uid://nbmfkuvbfodo"
+
+[node name="Banner" type="Button" parent="." unique_id=169840411]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 347.0
+offset_top = 195.0
+offset_right = 485.0
+offset_bottom = 255.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Banner
+"
+
+[node name="Interstetial" type="Button" parent="." unique_id=336067546]
+offset_left = 141.0
+offset_top = 357.0
+offset_right = 261.0
+offset_bottom = 437.0
+text = "Interestial"
+
+[node name="Rewarded" type="Button" parent="." unique_id=1597923641]
+offset_left = 130.0
+offset_top = 179.0
+offset_right = 260.0
+offset_bottom = 267.0
+text = "Rewarded
+"
+
+[connection signal="initialization_completed" from="Admob" to="." method="_on_admob_initialization_completed"]
+[connection signal="pressed" from="Banner" to="." method="_on_banner_pressed"]
+[connection signal="pressed" from="Interstetial" to="." method="_on_interstetial_pressed"]
+[connection signal="pressed" from="Rewarded" to="." method="_on_rewarded_pressed"]
