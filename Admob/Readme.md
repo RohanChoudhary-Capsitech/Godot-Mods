@@ -1,24 +1,34 @@
-# README — Complete AdManager Setup Guide For Godot
+# Godot AdMob Manager (Godot 4)
 
-This guide will help you setup a complete Ad Manager system in Godot Engine using Google AdMob.
+Production Ready AdMob Manager for Godot 4.
 
-Even if you are beginner, you can follow this step-by-step.
+Supports:
+
+- Banner Ads
+- Interstitial Ads
+- Rewarded Ads
+- Rewarded Interstitial Ads
+- Retry Logic
+- Auto Reload
+- Pause / Resume
+- Reward Callback
+- Global Access
 
 ---
 
-# What You Will Get
+# Features
 
-After setup you will have:
-
-✅ Banner Ads
-✅ Interstitial Ads
-✅ Rewarded Ads
-✅ Retry System
-✅ Auto Reload Ads
-✅ Pause Game During Ads
-✅ Resume Game After Ads
-✅ Global AdManager
-✅ Production Ready Setup
+✅ Banner Ads  
+✅ Interstitial Ads  
+✅ Rewarded Ads  
+✅ Rewarded Interstitial Ads  
+✅ Retry System  
+✅ Auto Reload  
+✅ Pause / Resume  
+✅ Reward Callback  
+✅ Global Access  
+✅ Production Ready  
+✅ Beginner Friendly  
 
 ---
 
@@ -38,13 +48,11 @@ Search:
 Admob
 ```
 
-Install the plugin.
+Install plugin.
 
 IMPORTANT:
 
-While installing:
-
-✅ Enable:
+Enable:
 
 ```text
 Ignore asset root
@@ -90,13 +98,13 @@ Install
 
 IMPORTANT:
 
-Without this ads may not work.
+Without Android build template ads may not work.
 
 ---
 
 # STEP 4 — Create AdManager Scene
 
-Create a new scene.
+Create new scene.
 
 Root node:
 
@@ -104,29 +112,19 @@ Root node:
 Node
 ```
 
-Rename it:
+Rename:
 
 ```text
 AdManager
 ```
 
-Now add child node.
-
-Click:
-
-```text
-+
-```
-
-Search:
+Add child node:
 
 ```text
 Admob
 ```
 
-Add it.
-
-Your scene should look like this:
+Final structure:
 
 ```text
 AdManager
@@ -136,17 +134,21 @@ AdManager
 
 ---
 
-# STEP 5 — Attach AdManager Script
+# STEP 5 — Attach Script
 
-Attach your `AdManager.gd` script to:
+Attach:
+
+```text
+AdManager.gd
+```
+
+to:
 
 ```text
 AdManager
 ```
 
-NOT on Admob node.
-
-Correct:
+Correct structure:
 
 ```text
 AdManager
@@ -154,14 +156,6 @@ AdManager
 ├── AdManager.gd
 │
 └── Admob
-```
-
-Wrong:
-
-```text
-Admob
-│
-└── AdManager.gd
 ```
 
 ---
@@ -174,11 +168,11 @@ Select:
 Admob
 ```
 
-In Inspector add these TEST IDs.
+In Inspector add TEST IDs.
 
 ---
 
-# Android Test App ID
+# Android App ID
 
 ```text
 ca-app-pub-3940256099942544~3347511713
@@ -186,7 +180,7 @@ ca-app-pub-3940256099942544~3347511713
 
 ---
 
-# iOS Test App ID
+# iOS App ID
 
 ```text
 ca-app-pub-3940256099942544~1458002511
@@ -196,13 +190,13 @@ ca-app-pub-3940256099942544~1458002511
 
 # Banner Test ID
 
-Android:
+## Android
 
 ```text
 ca-app-pub-3940256099942544/6300978111
 ```
 
-iOS:
+## iOS
 
 ```text
 ca-app-pub-3940256099942544/2934735716
@@ -212,13 +206,13 @@ ca-app-pub-3940256099942544/2934735716
 
 # Interstitial Test ID
 
-Android:
+## Android
 
 ```text
 ca-app-pub-3940256099942544/1033173712
 ```
 
-iOS:
+## iOS
 
 ```text
 ca-app-pub-3940256099942544/4411468910
@@ -228,13 +222,13 @@ ca-app-pub-3940256099942544/4411468910
 
 # Rewarded Test ID
 
-Android:
+## Android
 
 ```text
 ca-app-pub-3940256099942544/5224354917
 ```
 
-iOS:
+## iOS
 
 ```text
 ca-app-pub-3940256099942544/1712485313
@@ -242,9 +236,25 @@ ca-app-pub-3940256099942544/1712485313
 
 ---
 
+# Rewarded Interstitial Test ID
+
+## Android
+
+```text
+ca-app-pub-3940256099942544/5354046379
+```
+
+## iOS
+
+```text
+ca-app-pub-3940256099942544/6978759866
+```
+
+---
+
 # STEP 7 — is_real Setup
 
-Inside Admob inspector find:
+Inside Inspector:
 
 ```text
 is_real
@@ -256,13 +266,15 @@ For testing:
 false
 ```
 
-IMPORTANT:
-
-During testing ALWAYS use:
+For production:
 
 ```text
-false
+true
 ```
+
+IMPORTANT:
+
+Never click your own real ads.
 
 ---
 
@@ -274,7 +286,7 @@ Go to:
 Project → Project Settings → Autoload
 ```
 
-Select your:
+Add:
 
 ```text
 AdManager.tscn
@@ -286,17 +298,9 @@ Name:
 AdManager
 ```
 
-Click:
+Now AdManager becomes global.
 
-```text
-Add
-```
-
-IMPORTANT:
-
-Now AdManager works globally in whole game.
-
-You can use ads from ANY scene.
+You can use it from ANY scene.
 
 ---
 
@@ -310,10 +314,10 @@ Project → Export
 
 Create Android export preset.
 
-Enable permissions:
+Enable:
 
-✅ INTERNET
-✅ ACCESS_NETWORK_STATE
+- INTERNET
+- ACCESS_NETWORK_STATE
 
 ---
 
@@ -323,34 +327,32 @@ Export APK.
 
 IMPORTANT:
 
-Ads work properly on REAL Android device.
+Ads work properly on REAL Android devices.
 
-Sometimes ads do NOT work inside editor.
-
----
-
-# HOW ADS WORK
-
-Your system automatically:
-
-✅ initializes ads
-✅ loads ads
-✅ retries failed ads
-✅ reloads after close
-
-You do NOT need to manually reload every time.
+Ads may not work correctly inside editor.
 
 ---
 
-# HOW TO USE ADS IN GAME
+# HOW THE SYSTEM WORKS
 
-VERY IMPORTANT SECTION
+AdManager automatically:
 
-This is how you use ads in your game.
+✅ Initializes AdMob  
+✅ Loads Ads  
+✅ Retries Failed Ads  
+✅ Reloads Ads  
+✅ Pauses Game During Ads  
+✅ Resumes Game After Ads  
+
+You do NOT need to manually reload ads.
 
 ---
 
-# 1 — Banner Ads
+# HOW TO USE ADS
+
+---
+
+# Banner Ads
 
 Banner ads are small ads.
 
@@ -358,9 +360,7 @@ Usually shown at bottom.
 
 ---
 
-## Show Banner
-
-Example:
+# Show Banner
 
 ```gdscript
 AdManager.show_banner()
@@ -368,9 +368,7 @@ AdManager.show_banner()
 
 ---
 
-## Hide Banner
-
-Example:
+# Hide Banner
 
 ```gdscript
 AdManager.hide_banner()
@@ -378,19 +376,9 @@ AdManager.hide_banner()
 
 ---
 
-# WHERE TO USE BANNER
+# Example
 
-Good places:
-
-✅ Main Menu
-✅ Pause Menu
-✅ Shop Screen
-
----
-
-## Example
-
-MainMenu.gd
+## MainMenu.gd
 
 ```gdscript
 func _ready():
@@ -400,13 +388,21 @@ func _ready():
 
 ---
 
-# 2 — Interstitial Ads
+# Recommended Places
 
-These are full screen ads.
+✅ Main Menu  
+✅ Pause Menu  
+✅ Shop Screen  
 
 ---
 
-## Show Interstitial
+# Interstitial Ads
+
+Interstitial ads are fullscreen ads.
+
+---
+
+# Show Interstitial
 
 ```gdscript
 AdManager.show_interstitial()
@@ -414,18 +410,7 @@ AdManager.show_interstitial()
 
 ---
 
-# WHERE TO USE INTERSTITIAL
-
-Good places:
-
-✅ Level Complete
-✅ Game Over
-✅ After 2-3 matches
-✅ After player dies
-
----
-
-## Example — Game Over
+# Example — Game Over
 
 ```gdscript
 func game_over():
@@ -435,23 +420,38 @@ func game_over():
 
 ---
 
-## Example — Level Complete
+# Example — Every 3 Levels
 
 ```gdscript
+var level_count := 0
+
 func level_complete():
 
-	AdManager.show_interstitial()
+	level_count += 1
+
+	if level_count % 3 == 0:
+
+		AdManager.show_interstitial()
 ```
 
 ---
 
-# 3 — Rewarded Ads
+# Recommended Places
 
-Rewarded ads give reward to player.
+✅ Level Complete  
+✅ Game Over  
+✅ Retry Level  
+✅ Every Few Levels  
 
 ---
 
-## Show Rewarded
+# Rewarded Ads
+
+Rewarded ads give reward after watching ad.
+
+---
+
+# Show Rewarded Ad
 
 ```gdscript
 AdManager.show_rewarded(reward_player)
@@ -459,38 +459,50 @@ AdManager.show_rewarded(reward_player)
 
 ---
 
-# IMPORTANT
-
-Reward ONLY after player watches ad.
-
----
-
 # Example — Revive Player
 
 ```gdscript
-func on_revive_button_pressed():
+func _on_revive_pressed():
 
 	AdManager.show_rewarded(revive_player)
 ```
 
 ---
 
-## Reward Function
+# Reward Function
 
 ```gdscript
 func revive_player():
 
-	player_health = 100
-
-	print("Player Revived")
+	player.revive()
 ```
 
 ---
 
-# FULL REWARDED FLOW
+# Example — Hint Reward
+
+```gdscript
+func _on_hint_pressed():
+
+	AdManager.show_rewarded(give_hint)
+```
+
+---
+
+# Reward Function
+
+```gdscript
+func give_hint():
+
+	hints += 1
+```
+
+---
+
+# Rewarded Flow
 
 ```text
-Player Clicks Revive
+Player Clicks Reward Button
         ↓
 Rewarded Ad Opens
         ↓
@@ -503,23 +515,130 @@ Player Gets Reward
 
 ---
 
-# IMPORTANT — Game Pause
+# Rewarded Interstitial Ads
 
-Game automatically pauses during ads.
+Rewarded Interstitial is combination of:
 
-You do NOT need to manually pause game.
+- Rewarded Ads
+- Interstitial Ads
 
-Already handled inside AdManager.
+Fullscreen ad + reward.
 
 ---
 
-# RETRY SYSTEM
+# Show Rewarded Interstitial
+
+```gdscript
+AdManager.show_rewarded_interstitial(
+	give_bonus
+)
+```
+
+---
+
+# Example — Double Coins
+
+```gdscript
+func _on_double_reward_pressed():
+
+	AdManager.show_rewarded_interstitial(
+		double_coins
+	)
+```
+
+---
+
+# Reward Function
+
+```gdscript
+func double_coins():
+
+	coins *= 2
+```
+
+---
+
+# Example — Extra Stars
+
+```gdscript
+func _on_extra_star_pressed():
+
+	AdManager.show_rewarded_interstitial(
+		give_extra_star
+	)
+```
+
+---
+
+# Reward Function
+
+```gdscript
+func give_extra_star():
+
+	stars += 1
+```
+
+---
+
+# Ready Checks
+
+Use before showing ads.
+
+---
+
+# Banner Ready
+
+```gdscript
+AdManager.is_banner_ready()
+```
+
+---
+
+# Interstitial Ready
+
+```gdscript
+AdManager.is_interstitial_ready()
+```
+
+---
+
+# Rewarded Ready
+
+```gdscript
+AdManager.is_rewarded_ready()
+```
+
+---
+
+# Rewarded Interstitial Ready
+
+```gdscript
+AdManager.is_rewarded_interstitial_ready()
+```
+
+---
+
+# Example Ready Check
+
+```gdscript
+if AdManager.is_rewarded_ready():
+
+	AdManager.show_rewarded(give_reward)
+
+else:
+
+	print("Rewarded Ad Not Ready")
+```
+
+---
+
+# Retry System
 
 If internet fails:
 
-Your ads retry automatically.
+Ads retry automatically.
 
-Current setup:
+Default:
 
 ```gdscript
 retry_time = 3.0
@@ -528,69 +647,57 @@ max_retries = 5
 
 Meaning:
 
-✅ retry every 3 seconds
-✅ maximum 5 retries
+- Retry every 3 seconds
+- Maximum 5 retries
 
 ---
 
-# REAL ADS SETUP
+# Recommended Ad Strategy
 
-When publishing game:
+# Banner
 
-Replace TEST IDs with REAL IDs.
+Best for:
 
-Set:
-
-```text
-is_real = true
-```
-
-IMPORTANT:
-
-NEVER click your own real ads.
+- Main Menu
+- Pause Menu
+- Shop
 
 ---
 
-# RECOMMENDED AD FLOW
+# Interstitial
 
-Best setup:
+Best for:
 
----
-
-## Banner
-
-```text
-Main Menu
-Shop
-Pause Screen
-```
+- Level Complete
+- Game Over
+- Retry
+- Every Few Levels
 
 ---
 
-## Interstitial
+# Rewarded
 
-```text
-Game Over
-Level Complete
-Every few rounds
-```
+Best for:
 
----
-
-## Rewarded
-
-```text
-Revive
-Extra Coins
-Double Reward
-Unlock Hint
-```
+- Revive
+- Hint
+- Skip Level
+- Extra Coins
 
 ---
 
-# FINAL STRUCTURE
+# Rewarded Interstitial
 
-Recommended structure:
+Best for:
+
+- Double Rewards
+- Bonus Rewards
+- Continue Streak
+- Extra Stars
+
+---
+
+# Recommended Structure
 
 ```text
 Autoloads
@@ -607,11 +714,9 @@ Scenes
 
 ---
 
-# EXAMPLE REAL USAGE
+# Example Real Usage
 
----
-
-## Main Menu
+# Main Menu
 
 ```gdscript
 func _ready():
@@ -621,7 +726,7 @@ func _ready():
 
 ---
 
-## Game Over
+# Game Over
 
 ```gdscript
 func game_over():
@@ -631,7 +736,7 @@ func game_over():
 
 ---
 
-## Revive Button
+# Revive Button
 
 ```gdscript
 func _on_revive_pressed():
@@ -641,7 +746,7 @@ func _on_revive_pressed():
 
 ---
 
-## Reward Function
+# Reward Function
 
 ```gdscript
 func revive_player():
@@ -651,16 +756,42 @@ func revive_player():
 
 ---
 
-# FINAL RESULT
+# Rewarded Interstitial Example
 
-Now you have:
+```gdscript
+func on_bonus_reward_pressed():
 
-✅ Professional AdManager
-✅ Retry System
-✅ Auto Reload Ads
-✅ Rewarded System
-✅ Global Ad Access
-✅ Production Ready Setup
-✅ Beginner Friendly Structure
+	AdManager.show_rewarded_interstitial(
+		give_bonus_reward
+	)
+```
 
-Your ad system is now ready for real mobile games in Godot Engine using Google AdMob.
+---
+
+# Bonus Reward Function
+
+```gdscript
+func give_bonus_reward():
+
+	coins += 500
+```
+
+---
+
+# Final Result
+
+You now have:
+
+✅ Banner Ads  
+✅ Interstitial Ads  
+✅ Rewarded Ads  
+✅ Rewarded Interstitial Ads  
+✅ Retry System  
+✅ Auto Reload Ads  
+✅ Pause / Resume  
+✅ Reward Callback  
+✅ Global Access  
+✅ Production Ready Ad System  
+✅ Plugin Friendly Structure  
+
+Your AdMob system is now ready for real mobile games using Godot 4.
